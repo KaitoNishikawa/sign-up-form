@@ -1,0 +1,149 @@
+@font-face{
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0E0E0E;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1400px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 500px calc(100% - 500px);
+    justify-content: stretch; 
+}
+
+.image{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+
+#overlay{
+    margin-top: 220px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 95px;
+    font-family: norse;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 150px;
+}
+
+#odin{
+    height: 130px;
+    width: auto;
+}
+
+.main-content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;    
+}
+
+#top{
+    --height: calc(100% - 150px);
+    background-color: #F3F3F3;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 70px;
+}
+
+#middle{
+    background-color: white;
+    flex-grow: 0;
+    box-shadow: 0 1px 5px #919191;
+    z-index: 2;
+    padding: 20px 40px 25px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#bottom{
+    background-color: #F3F3F3;
+    flex-grow: 1;
+    padding: 33px 40px 33px 40px;
+}
+
+#text{
+    margin-left: 40px; 
+    width: 74%;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#header{
+    font-size: 24px;
+    font-weight: bold;
+    color: #363636;
+}
+
+#input-container{
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(3, 65px);
+}
+
+#sign-up{
+    width: 210px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #596D48; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#sign-up:hover{
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
+
+#sign-up:active{
+    background-image: linear-gradient(rgb(0 0 0/25%) 0 0);
+}
+
+#log-in{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #363636;
+}
+
+a{
+    color: #596D48;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #3F3F3F;
+}
+
+input{
+    border-radius: 3px;
+    border: 2px solid #EEEEEE;
+    width: 240px;
+    height: 25px;
+}
+

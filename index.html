@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="image">
+            <img src="leaves.jpg" alt="">
+            <div id="overlay">
+                <img src="odin-lined.png" alt="" id="odin">
+                ODIN
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="top">
+                <div id="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br><br>You <em>know</em> you want to.</div>
+            </div>
+            <div id="middle">
+                <div id="header">Let's do this!</div>
+                <form id="input-container" action="script.js" method="" name="">
+                    <div>
+                        <label for="name">FIRST NAME</label><br>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for="lastname">LAST NAME</label><br>
+                        <input type="text" name="lastname" required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phonenumber">PHONE NUMBER</label><br>
+                        <input type="tel" name="phonenumber" required>
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="confirmpassword">CONFIRM PASSWORD</label><br>
+                        <input type="password" name="confirmpassword" required>
+                    </div>
+                </form>
+            </div>
+            <div id="bottom">
+                <button id="sign-up" type="submit">Create Account</button>
+                <div id="log-in">Already have an account? <a href = "">Log in</a></div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
