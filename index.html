@@ -18,6 +18,7 @@
                 <img src="odin-lined.png" alt="" id="odin">
                 ODIN
             </div>
+            <div id="credit">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank" class="creditLink">Halie West</a> on <a href="https://unsplash.com/" target="_blank" class="creditLink">Unsplash</a></div>
         </div>
         <div class="main-content">
             <div id="top">
@@ -25,36 +26,38 @@
             </div>
             <div id="middle">
                 <div id="header">Let's do this!</div>
-                <form id="input-container" action="script.js" method="" name="">
+                <form id="input-container" action="/" method="GET" name="">
                     <div>
                         <label for="name">FIRST NAME</label><br>
-                        <input type="text" name="name" required>
+                        <input id="name" type="text" name="name" required>
                     </div>
                     <div>
                         <label for="lastname">LAST NAME</label><br>
-                        <input type="text" name="lastname" required>
+                        <input id="lastName" type="text" name="lastname" required>
                     </div>
                     <div>
                         <label for="email">EMAIL</label><br>
-                        <input type="email" name="email" required>
+                        <input id="email" type="email" name="email" required>
                     </div>
                     <div>
                         <label for="phonenumber">PHONE NUMBER</label><br>
-                        <input type="tel" name="phonenumber" required>
+                        <input id="phoneNumber" type="tel" name="phonenumber" pattern="[0-9]{10}" required>
+                        <div id="numberError"></div>
                     </div>
                     <div>
                         <label for="password">PASSWORD</label><br>
-                        <input type="password" name="password" required>
+                        <input id="password" type="password" name="password" required>
                     </div>
                     <div>
                         <label for="confirmpassword">CONFIRM PASSWORD</label><br>
-                        <input type="password" name="confirmpassword" required>
+                        <input id="confirmPassword" type="password" name="confirmpassword" required>
+                        <div id="matchError"></div>
                     </div>
                 </form>
             </div>
             <div id="bottom">
-                <button id="sign-up" type="submit">Create Account</button>
-                <div id="log-in">Already have an account? <a href = "">Log in</a></div>
+                <button id="sign-up" type="submit" form="input-container">Create Account</button>
+                <div id="log-in">Already have an account? <a href = "" id="logInLink">Log in</a></div>
             </div>
         </div>
     </div>

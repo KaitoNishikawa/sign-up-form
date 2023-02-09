@@ -27,7 +27,7 @@ html, body{
 }
 
 #overlay{
-    margin-top: 220px;
+    margin-top: 45%;
     position: absolute;
     display: flex;
     align-items: center;
@@ -43,6 +43,18 @@ html, body{
 #odin{
     height: 130px;
     width: auto;
+}
+
+#credit{
+    align-self: flex-end;
+    position: absolute;
+    margin-bottom: 10px;
+    color: #BEBEBE; 
+    font-size: 14px;
+}
+
+.creditLink{
+    color: #BEBEBE; 
 }
 
 .main-content{
@@ -124,12 +136,12 @@ html, body{
     color: #363636;
 }
 
-a{
+#logInLink{
     color: #596D48;
     text-decoration: none;
 }
 
-a:hover{
+#logInLink:hover{
     text-decoration:underline;
 }
 
@@ -140,10 +152,24 @@ label{
     color: #3F3F3F;
 }
 
+#numberError{
+    font-size: 11px;
+    color: red;
+}
+
+#matchError{
+    font-size: 11px;
+    color: red;
+}
+
 input{
     border-radius: 3px;
-    border: 2px solid #EEEEEE;
+    border: 1px solid #E0E0E0;
     width: 240px;
     height: 25px;
 }
 
+input:focus{
+    outline: 1px solid #358ccb;
+    box-shadow: 3px 4px 4px 1px #919191;
+}
